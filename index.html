@@ -1,0 +1,34 @@
+<!-- Francheska Guzman -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>The Weather</title>
+	<script 
+	  src="https://code.jquery.com/jquery-3.2.1.js"
+	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	  crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+<h1>Weather</h1>
+<div class="container">
+	<input type="text" id="zipCode" name="zipcode">
+	<input type="button" id="search" value="Search">
+		<div id="wrapper">
+			<div id="city"></div>
+			<div class="horizontal">
+			<div id="currentTemperature"></div>
+			<div class="vertical">
+			<div id="minT">Min: <span id="minTemperature"></span></div>
+			<div id="maxT">Max: <span id="maxTemperature"></span></div>
+			</div>
+			</div>
+			<div id="weatherId"></div>
+			<div id="weatherDescription"></div>
+		</div>
+</div>
+<h2 id="hide">Lookup a zip code! Write '94123' to get San Francisco, California weather.</h2>
+</body>
+</html>
