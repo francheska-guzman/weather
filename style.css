@@ -3,14 +3,15 @@
 @import url('https://fonts.googleapis.com/css?family=Andika|Cinzel+Decorative');
 
 body {
+	padding: 50px 0;
 	margin: 0 auto;
-	background-color: #191818;
+	background: #aea5b7;
 }
 
 h1 {
 	margin: 5% auto;
 	font-size: 40px;
-	color: #FFFFFF;
+	color: #240356;
 	font-family: 'Cinzel Decorative', cursive;
 	letter-spacing: 10px;
 	text-align: center;
@@ -18,19 +19,20 @@ h1 {
 
 h2 {
 	margin: 5% auto;
-	font-size: 16px;
-	color: #FFFFFF;
-	font-family: 'Andika', sans-serif;
+	font-size: 18px;
+	color: #3f334c;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: normal;
 	text-align: center;
 }
 
 .container {
 	margin: 2% auto;
-	width: 600px;
+	width: 400px;
 	height: auto;
 	text-align: center;
 	background-color: #f9f9f9;
-	border-radius: 2%;
+	border-radius: 8px;
 }
 
 .horizontal {
@@ -99,13 +101,12 @@ button:focus {
 	height: auto;
 	padding: 9px;
 	border: none;
-	background-color: #323133;
+	background-color: #240356;
 	font-family: 'Arsenal', sans-serif;
 	font-size: 18px;
 	color: #dad9db;
 }
 
 #search:hover {
-	background-color: #C9C7CC;
-	color: #000000;
+	background-color: #160138;
 }

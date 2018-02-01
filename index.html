@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>The Weather</title>
+	<title>Weather</title>
 	<script 
 	  src="https://code.jquery.com/jquery-3.2.1.js"
 	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -14,8 +14,15 @@
 <body>
 <h1>Weather</h1>
 <div class="container">
-	<input type="text" id="zipCode" name="zipcode">
-	<input type="button" id="search" value="Search">
+	<form>
+		<input type="text" 
+			   pattern="(\d{5}([\-]\d{4})?)"
+			   id="zipCode" 
+			   name="zipcode" 
+			   placeholder="ZIP Code *" 
+			   required>
+		<input type="button" id="search" value="Search">
+    </form>
 		<div id="wrapper">
 			<div id="city"></div>
 			<div class="horizontal">
@@ -29,6 +36,10 @@
 			<div id="weatherDescription"></div>
 		</div>
 </div>
-<h2 id="hide">Lookup a zip code! Write '94123' to get San Francisco, California weather.</h2>
+	<h2 id="hide">
+		Check your weather using your ZIP Code!
+		<br/>
+		i.e. Use '94123' to retrieve San Francisco, California weather information.
+	</h2>
 </body>
 </html>
